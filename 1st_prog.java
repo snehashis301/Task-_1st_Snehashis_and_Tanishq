@@ -9,6 +9,14 @@ class Student
 	double percentage;
 	String[] skills;
 
+	public Student(String name, int id, double percentage, String[] skills)
+	{
+		this.name=name;
+		this.id=id;
+		this.percentage=percentage;
+		this.skills=skills;
+	}
+
     public Student(String name, int id)
 	{
         this.name=name;
@@ -60,10 +68,13 @@ class Student
 		this.percentage=percentage;
 
    }
-	public void update_skills(String s)
+	public void  update_skills(String s)
 	  {
 		  ArrayList<String> myList = new ArrayList<String>(Arrays.asList(myArray));
 		  myList.add(s);
 		  this.skills = myList.toArray(myArray);
         }
 }
+
+//write more comments
+//proper indentations to be done
