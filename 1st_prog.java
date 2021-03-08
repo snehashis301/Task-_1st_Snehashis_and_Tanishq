@@ -25,24 +25,45 @@ class Student
 		this.id=id;
 		this.skills=skills;
 	}
-   public getName()
+   public String getName()
    {
 		return this.name;
 
    }
-   public getId()
+   public int getId()
    {
 		return this.id;
 
    }
-   public getPercentage()
+   public double getPercentage()
    {
 		return this.percentage;
 
    }
-   public getSkills()
+   public String getSkills()
    {
 		return Arrays.toString(this.skills);
 
    }
+      public void setName(String name)
+   {
+		this.name=name;
+
+   }
+   public void setId(int id)
+   {
+		this.id=id;
+
+   }
+   public void setPercentage(double percentage)
+   {
+		this.percentage=percentage;
+
+   }
+	public void  update_skills(String s)
+	  {
+		  ArrayList<String> myList = new ArrayList<String>(Arrays.asList(myArray));
+		  myList.add(s);
+		  this.skills = myList.toArray(myArray);
+        }
 }
