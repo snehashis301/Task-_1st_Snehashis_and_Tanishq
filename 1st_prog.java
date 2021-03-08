@@ -60,7 +60,7 @@ class Student
 		this.percentage=percentage;
 
    }
-	public void  update_skills(String s)
+	public void update_skills(String s)
 	  {
 		  ArrayList<String> myList = new ArrayList<String>(Arrays.asList(myArray));
 		  myList.add(s);
